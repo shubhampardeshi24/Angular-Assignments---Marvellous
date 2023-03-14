@@ -1,6 +1,5 @@
 function largestElement(noArray : number[]):number
 {
-
     let largestElement : number = noArray[0]
 
     let i : number = 0;
