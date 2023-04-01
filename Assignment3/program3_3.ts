@@ -16,20 +16,21 @@ class Circle{
     }
 
 
-    class CircleX extends Circle{
-        constructor(InputVal : number){
-        super(InputVal);
-    }
+    class Circum extends Circle{
 
+        constructor(number : number)
+        {
+            super(number);
+        }
 
-    circum():number{
-        return 2 * this.PI * this.Redius;
+        circum() : number
+        {
+            return 2 * this.PI * this.Redius  * this.Redius;
         }
     }
 
+var circleObj1 = new Circum(10);
 
-    var ob1 = new CircleX(5);
-    var ob2 = new CircleX(10);
+console.log("Circum ference is :: "+circleObj1.circum());
 
-    console.log("by obj1 : circumference is: "+ob1.circum());
-    console.log("by obj2 : circumference is: "+ob2.circum());
+
